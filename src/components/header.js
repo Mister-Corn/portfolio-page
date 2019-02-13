@@ -1,13 +1,14 @@
 import { Link } from "gatsby";
 import React from "react";
 import logo from "../images/noun_Unicorn_29749-S.png";
+import headerStyles from "./header.module.css";
 
 const Header = () => (
-  <header>
+  <header className={headerStyles.header}>
     <img src={logo} alt="Mister-Corn!" />
     <Link to="/">Home</Link>
-    <Link to="/">About</Link>
-    <Link to="/">Projects</Link>
+    <Link to="/about/">About</Link>
+    <Link to="/projects/">Projects</Link>
   </header>
 );
 

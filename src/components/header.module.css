@@ -1,0 +1,34 @@
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.header img {
+  height: 96px;
+  width: 96px;
+}
+
+.header a {
+  margin: 0 0.5rem;
+  /* Text */
+  font-size: 1.25rem;
+  color: black;
+  font-family: "Muli", "Century Gothic", "URW Gothic L", "Avant Garde",
+    sans-serif;
+}
+
+.header a:link {
+  text-decoration: none;
+}
+
+.header a:visited {
+  text-decoration: none;
+}
+
+.header a:hover {
+  text-decoration: underline;
+}
+
+.header a:active {
+  text-decoration: underline;
+}
