@@ -13,5 +13,7 @@ export default new Typography({
     "Avant Garde",
     "sans-serif"
   ],
-  bodyFontFamily: ["Spectral", "Georgia", "serif"]
+  bodyFontFamily: ["Spectral", "Georgia", "serif"],
+  scaleRatio: 2.25,
+  baseLineHeight: 1.1
 });
