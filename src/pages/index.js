@@ -1,20 +1,28 @@
 import React from "react";
-import { Link } from "gatsby";
-
+// Components
 import Layout from "../components/layout";
-import Image from "../components/image";
 import SEO from "../components/seo";
+// Styles
+import indexStyles from "./index.module.css";
+// Assets
+import selfie from "../images/col-img.jpg";
+import splash from "../images/splash-img.jpg";
 
 const IndexPage = () => (
   <Layout>
     {/* <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} /> */}
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+    <div className={indexStyles.main}>
+      <div className={indexStyles.namebox}>
+        <h1>Ronald Libago</h1>
+        <p>Web Developer</p>
+      </div>
+      <img className={indexStyles.selfie} src={selfie} alt="Ronald Libago" />
+      <img
+        className={indexStyles.splash}
+        src={splash}
+        alt="Dockweiller Beach"
+      />
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
   </Layout>
 );
 

@@ -2,15 +2,16 @@ import Typography from "typography";
 
 export default new Typography({
   googleFonts: [
-    { name: "Muli", styles: ["700"] },
+    { name: "Open Sans Condensed", styles: ["700", "800"] },
     { name: "Spectral", styles: ["400", "400i", "700"] }
   ],
   headerFontFamily: [
-    "Muli",
-    "Century Gothic",
-    "CenturyGothic",
-    "URW Gothic L",
-    "Avant Garde",
+    "Open Sans Condensed",
+    // "Century Gothic",
+    // "CenturyGothic",
+    // "URW Gothic L",
+    // "Avant Garde",
+    "Times New Roman",
     "sans-serif"
   ],
   bodyFontFamily: ["Spectral", "Georgia", "serif"],

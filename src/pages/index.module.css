@@ -1,0 +1,31 @@
+.main {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  gap: 2rem;
+  grid-template-rows: 50vh 40vh;
+  grid-template-areas: "splash splash splash" "selfie selfie namebox";
+}
+
+.main img {
+  width: 100%;
+  height: 100%;
+}
+
+.selfie,
+.splash {
+  object-fit: cover;
+}
+
+.selfie {
+  grid-area: selfie;
+}
+
+.splash {
+  grid-area: splash;
+}
+
+.namebox {
+  background-color: #dbe8f1;
+  grid-area: namebox;
+}
