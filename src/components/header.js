@@ -1,6 +1,9 @@
-import { Link } from "gatsby";
 import React from "react";
-import logo from "../images/noun_Unicorn_29749-S.png";
+// Components
+import { Link } from "gatsby";
+// Assets
+import logo from "../images/icon.svg";
+// Styles
 import headerStyles from "./header.module.css";
 
 const Header = () => (

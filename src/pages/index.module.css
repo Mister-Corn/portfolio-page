@@ -3,8 +3,9 @@
   width: 100%;
   display: grid;
   gap: 2rem;
+  grid-template-columns: 55% 1fr;
   grid-template-rows: 50vh 40vh;
-  grid-template-areas: "splash splash splash" "selfie selfie namebox";
+  grid-template-areas: "splash splash" "selfie namebox";
 }
 
 .main img {
@@ -26,6 +27,8 @@
 }
 
 .namebox {
-  background-color: #dbe8f1;
+  /* Grid */
   grid-area: namebox;
+  /* Color */
+  background-color: #d5e1ed;
 }
