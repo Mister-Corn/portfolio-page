@@ -4,7 +4,22 @@ import PropTypes from "prop-types";
 import cardStyles from "./projectCard.module.css";
 
 const ProjectCard = ({ image, title, link, code, stack, description }) => {
-  const { projectCard, textBox } = cardStyles;
+  const { projectCard, textBox, stackList } = cardStyles;
+
+  // TODO: Make the below work
+  // const createLists = stack => {
+  //   const elements = [];
+  //   for (const [i, item] of stack.entries()) {
+  //     const unorderedList = [];
+  //     if (i % 3 === 0 && i !== 0) {
+  //       elements.push(<ul>{unorderedList.map(li => li)}</ul>);
+  //     }
+  //     unorderedList.push(<li>{item}</li>);
+  //   }
+  //   console.log(elements);
+  //   return elements;
+  // };
+
   return (
     <div className={projectCard}>
       <img src={image} alt={`${title} Preview`} />
@@ -12,12 +27,13 @@ const ProjectCard = ({ image, title, link, code, stack, description }) => {
         <h1>{title}</h1>
         <p>{description}</p>
       </div>
-      <div className={stack}>
+      <div className={stackList}>
         <ul>
           {stack.map(item => (
             <li>{item}</li>
           ))}
         </ul>
+        {/* {createLists(stack).map(ele => ele)} */}
       </div>
     </div>
   );

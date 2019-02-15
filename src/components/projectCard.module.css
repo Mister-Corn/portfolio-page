@@ -1,7 +1,7 @@
 .projectCard {
   margin: 2rem 1rem;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 65% 1fr;
   gap: 1rem;
   grid-template-areas: "preview preview" "textBox stack";
 }
@@ -15,6 +15,6 @@
 .textBox {
   grid-area: textBox;
 }
-.stack {
+.stackList {
   grid-area: stack;
 }
