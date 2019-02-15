@@ -9,8 +9,8 @@ import headerStyles from "./header.module.css";
 const Header = () => (
   <header className={headerStyles.header}>
     <img src={logo} alt="Mister-Corn!" />
-    <Link to="/">Home</Link>
-    <Link to="/about/">About</Link>
+    <Link to="/">/</Link>
+    <Link to="/about/">Me</Link>
     <Link to="/projects/">Projects</Link>
   </header>
 );

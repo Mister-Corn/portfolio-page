@@ -30,5 +30,13 @@
   /* Grid */
   grid-area: namebox;
   /* Color */
-  background-color: #d5e1ed;
+  background-color: #fdcb6e;
+}
+
+.namebox h1 {
+  font-size: calc(1.8rem * 2.25);
+}
+
+.namebox p {
+  font-size: 1.8rem;
 }

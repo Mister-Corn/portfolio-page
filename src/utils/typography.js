@@ -7,11 +7,11 @@ export default new Typography({
   ],
   headerFontFamily: [
     "Open Sans Condensed",
-    // "Century Gothic",
-    // "CenturyGothic",
-    // "URW Gothic L",
-    // "Avant Garde",
-    "Times New Roman",
+    "Century Gothic",
+    "CenturyGothic",
+    "URW Gothic L",
+    "Avant Garde",
+    "Arial",
     "sans-serif"
   ],
   bodyFontFamily: ["Spectral", "Georgia", "serif"],
