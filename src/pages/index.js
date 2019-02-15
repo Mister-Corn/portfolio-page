@@ -14,7 +14,11 @@ const IndexPage = () => (
     <div className={indexStyles.main}>
       <div className={indexStyles.namebox}>
         <h1>Ronald Libago</h1>
-        <p>Full Stack Web Developer</p>
+        <p>
+          Full Stack
+          <br />
+          Web Developer
+        </p>
       </div>
       <img className={indexStyles.selfie} src={selfie} alt="Ronald Libago" />
       <img

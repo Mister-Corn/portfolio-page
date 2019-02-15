@@ -27,6 +27,7 @@
 }
 
 .namebox {
+  padding: 1rem 2rem;
   /* Grid */
   grid-area: namebox;
   /* Color */
