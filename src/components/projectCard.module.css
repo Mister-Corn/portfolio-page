@@ -1,2 +1,20 @@
 .projectCard {
+  margin: 2rem 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  grid-template-areas: "preview preview" "textBox stack";
+}
+
+.projectCard img {
+  object-fit: cover;
+  border-radius: 5px;
+  grid-area: preview;
+}
+
+.textBox {
+  grid-area: textBox;
+}
+.stack {
+  grid-area: stack;
 }
