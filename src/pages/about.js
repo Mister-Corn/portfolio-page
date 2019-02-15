@@ -31,6 +31,7 @@ const About = () => {
         </div>
         <div className={resume}>
           <h1>Résumé</h1>
+          <i className="far fa-file-pdf file-icon" />
         </div>
       </div>
     </LayOut>

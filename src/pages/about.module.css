@@ -38,6 +38,12 @@
 }
 
 .resume {
+  padding: 1rem;
   grid-area: resume;
   background-color: #fd79a8;
+}
+
+.main .file-icon {
+  margin: auto;
+  color: white;
 }
