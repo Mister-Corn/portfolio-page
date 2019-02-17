@@ -1,0 +1,19 @@
+.image {
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+  animation: fadein 0.7s ease-out;
+}
+
+@keyframes fadein {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

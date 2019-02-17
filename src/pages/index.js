@@ -1,7 +1,8 @@
 import React from "react";
 // Components
 import Layout from "../components/layout";
-import SEO from "../components/seo";
+// import SEO from "../components/seo";
+import Image from "../components/image";
 // Styles
 import indexStyles from "./index.module.css";
 // Assets
@@ -21,7 +22,7 @@ const IndexPage = () => (
         </p>
       </div>
       <img className={indexStyles.selfie} src={selfie} alt="Ronald Libago" />
-      <img
+      <Image
         className={indexStyles.splash}
         src={splash}
         alt="Dockweiller Beach"
