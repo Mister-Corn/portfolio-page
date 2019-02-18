@@ -3,8 +3,10 @@ import React from "react";
 import LayOut from "../components/layout";
 import ProjectCard from "../components/projectCard";
 // Assets
-import lodgel from "../images/lodgel.png";
-import pairMe from "../images/pairme.png";
+import lodgel from "../images/lodgel.jpg";
+import pairMe from "../images/pairme.jpg";
+// Styles
+import projectStyles from "./project.module.css";
 
 const projectsList = [
   {
@@ -17,7 +19,7 @@ const projectsList = [
       "TypeScript",
       "Express",
       "PostgreSQL",
-      // "Jest",
+      "Jest",
       "Firebase",
       "Stripe API"
     ],
@@ -30,21 +32,21 @@ const projectsList = [
     link: "https://pairme.netlify.com/",
     code:
       "https://github.com/NandoTheessen/Pair-Me-LS-Winter-Hakathon-Submission",
-    stack: ["React", "Redux", "Express", "PostgreSQL", "Slack API"],
+    stack: ["React", "Redux", "Express", "PostgreSQL", "Jest", "Slack API"],
     description:
-      "PairMe is a web app and Slack bot designed to connect students with teachers, teaching assistants, and other students able to help. Students can request help on a specified topic, while helpers can post their availability and topics they can help with. Both student and helper get Slack notification if a match is found!"
+      "PairMe is a web app and Slack bot designed to connect students with teachers, teaching assistants, and other students able to help. Students can request help on a specified topic, while helpers can post their availability and topics they can help with. Both student and helper get a Slack notification if a match is found!"
   }
 ];
 
 const Projects = () => {
+  const { main } = projectStyles;
+
   return (
-    <LayOut>
-      <div className="projectsList">
-        {projectsList.map(props => (
-          <ProjectCard {...props} />
-        ))}
-      </div>
-    </LayOut>
+    <div id="projects" className={main}>
+      {projectsList.map(props => (
+        <ProjectCard {...props} />
+      ))}
+    </div>
   );
 };
 

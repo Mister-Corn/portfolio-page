@@ -1,11 +1,10 @@
 .main {
-  height: 100%;
   width: 100%;
   display: grid;
   gap: 2rem;
-  grid-template-columns: 55% 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 30vh 1fr;
-  grid-template-areas: "selfie namebox" "about resume";
+  grid-template-areas: "namebox selfie selfie" "about about resume";
 }
 
 .namebox {
@@ -13,15 +12,17 @@
   /* Grid */
   grid-area: namebox;
   /* Color */
-  background-color: #fdcb6e;
+  background-color: var(--sun-light);
+  /* Text */
+  line-height: 0.65;
 }
 
 .namebox h1 {
-  font-size: calc(1.8rem * 2.25);
+  font-size: calc(1.25rem * 2.25);
 }
 
 .namebox p {
-  font-size: 1.8rem;
+  font-size: 1.25rem;
 }
 
 .selfie {
@@ -32,18 +33,27 @@
 }
 
 .about {
-  padding: 1rem;
+  padding: 2rem;
   grid-area: about;
-  background-color: #74b9ff;
+  background-color: #81ecec;
 }
 
 .resume {
-  padding: 1rem;
+  padding: 2rem;
   grid-area: resume;
-  background-color: #fd79a8;
+  border: 1px solid rgba(51, 51, 51, 0.075);
+  background-color: #dfe6e9;
 }
 
-.main .file-icon {
-  margin: auto;
-  color: white;
+.iconDiv {
+  height: 60%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resume svg {
+  font-size: 4rem;
+  color: #00cec9;
 }
