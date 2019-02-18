@@ -41,7 +41,6 @@
 .resume {
   padding: 2rem;
   grid-area: resume;
-  border: 1px solid rgba(51, 51, 51, 0.075);
   background-color: #dfe6e9;
 }
 
