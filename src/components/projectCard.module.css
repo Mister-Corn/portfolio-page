@@ -1,3 +1,33 @@
+.projectCard {
+  width: 100%;
+  margin: 2rem 1rem;
+  padding: 2rem;
+  border: 1px solid rgba(51, 51, 51, 0.075);
+  border-radius: 2px;
+  background-color: #fff3cf;
+  /* Grid */
+  display: grid;
+  grid-template-columns: 35% 1fr;
+  gap: 2rem;
+  grid-template-areas: "textBox preview" "stack preview";
+}
+
+.projectCard img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  grid-area: preview;
+}
+
+.projectCard p {
+  text-align: justify;
+}
+
+.textBox {
+  grid-area: textBox;
+}
+
 .linkGroup {
   padding-left: 1rem;
 }
@@ -7,23 +37,6 @@
   font-size: 1.75rem;
 }
 
-.projectCard {
-  margin: 2rem 1rem;
-  display: grid;
-  grid-template-columns: 65% 1fr;
-  gap: 1rem;
-  grid-template-areas: "preview preview" "textBox stack";
-}
-
-.projectCard img {
-  object-fit: cover;
-  border-radius: 5px;
-  grid-area: preview;
-}
-
-.textBox {
-  grid-area: textBox;
-}
 .stackList {
   grid-area: stack;
 }

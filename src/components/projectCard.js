@@ -30,10 +30,10 @@ const ProjectCard = ({ image, title, link, code, stack, description }) => {
         <h1>
           {title}
           <span className={linkGroup}>
-            <a href={link}>
+            <a href={link} target="_blank">
               <FaDesktop />
             </a>
-            <a href={code}>
+            <a href={code} target="_blank">
               <FaGithubSquare />
             </a>
           </span>
