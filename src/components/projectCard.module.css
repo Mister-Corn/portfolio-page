@@ -4,7 +4,7 @@
   padding: 2rem;
   border: 1px solid rgba(51, 51, 51, 0.075);
   border-radius: 2px;
-  background-color: #fff3cf;
+  background-color: var(--sun-light);
   /* Grid */
   display: grid;
   grid-template-columns: 35% 1fr;

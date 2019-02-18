@@ -5,6 +5,8 @@ import ProjectCard from "../components/projectCard";
 // Assets
 import lodgel from "../images/lodgel.jpg";
 import pairMe from "../images/pairme.jpg";
+// Styles
+import projectStyles from "./project.module.css";
 
 const projectsList = [
   {
@@ -37,8 +39,10 @@ const projectsList = [
 ];
 
 const Projects = () => {
+  const { main } = projectStyles;
+
   return (
-    <div className="projectsList">
+    <div id="projects" className={main}>
       {projectsList.map(props => (
         <ProjectCard {...props} />
       ))}

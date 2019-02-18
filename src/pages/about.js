@@ -5,7 +5,7 @@ import Image from "../components/image";
 // Styles
 import aboutStyles from "./about.module.css";
 // Assets
-import selfieImg from "../images/col-img.jpg";
+import selfieImg from "../images/avatar.jpg";
 import resumePdf from "../images/resume.pdf";
 // Icons
 import { FaFileAlt } from "react-icons/fa";
