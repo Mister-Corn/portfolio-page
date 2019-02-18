@@ -7,7 +7,7 @@ const Image = props => {
   const { className, src, alt } = props;
   const [visible, setVisible] = useState(false);
   const handleImageLoaded = () => setVisible(true);
-
+  console.log("img visible state:", visible);
   return (
     // TODO: Fix state not being updated
     // <div className={className}>
