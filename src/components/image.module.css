@@ -1,5 +1,5 @@
 .image {
-  visibility: show;
+  visibility: visible;
   animation: fadein 0.7s ease-out;
 }
 
