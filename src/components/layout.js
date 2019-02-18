@@ -1,19 +1,19 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { StaticQuery, graphql } from "gatsby";
+import React from 'react'
+import '../assets/scss/main.scss'
 
-import Header from "./header";
-import layoutStyles from "./layout.module.css";
+import Header from './Header'
 
-const Layout = ({ children }) => (
-  <div className={layoutStyles.layout}>
-    <Header />
-    {children}
-  </div>
-);
+class Template extends React.Component {
+    render() {
+        const { children } = this.props
 
-Layout.propTypes = {
-  children: PropTypes.node.isRequired
-};
+        return (
+            <div>
+                <Header />
+                {children}
+            </div>
+        )
+    }
+}
 
-export default Layout;
+export default Template
