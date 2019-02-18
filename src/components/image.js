@@ -9,13 +9,13 @@ import imageStyles from "./image.module.css";
 const Image = props => {
   const { className, src, alt } = props;
   const [visible, setVisible] = useState(false);
-  const handleImageLoaded = () => setVisible(true);
+  const handleImageLoaded = () => setVisible(prev => !prev);
 
   return (
     <div className={className}>
       <img
         className={`${imageStyles.image} ${
-          visible ? imageStyles.visible : ""
+          visible ? imageStyles.visible : imageStyles.invisible
         } ${className || ""}`}
         src={src}
         alt={alt}
