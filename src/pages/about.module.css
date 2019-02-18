@@ -13,7 +13,7 @@
   /* Grid */
   grid-area: namebox;
   /* Color */
-  background-color: #fdcb6e;
+  background-color: #ffeaa7;
 }
 
 .namebox h1 {
@@ -34,13 +34,13 @@
 .about {
   padding: 1rem;
   grid-area: about;
-  background-color: #74b9ff;
+  border: 1px solid rgba(51, 51, 51, 0.125);
 }
 
 .resume {
   padding: 1rem;
   grid-area: resume;
-  background-color: #fd79a8;
+  background-color: #74b9ff;
 }
 
 .main .file-icon {
