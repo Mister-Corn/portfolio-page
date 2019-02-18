@@ -34,16 +34,24 @@
 .about {
   padding: 1rem;
   grid-area: about;
-  border: 1px solid rgba(51, 51, 51, 0.125);
+  background-color: #81ecec;
 }
 
 .resume {
   padding: 1rem;
   grid-area: resume;
-  background-color: #74b9ff;
+  border: 1px solid rgba(51, 51, 51, 0.125);
 }
 
-.main .file-icon {
-  margin: auto;
-  color: white;
+.iconDiv {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resume svg {
+  font-size: 6rem;
+  color: #00cec9;
 }

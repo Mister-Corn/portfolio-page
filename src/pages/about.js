@@ -6,8 +6,12 @@ import Image from "../components/image";
 import aboutStyles from "./about.module.css";
 // Assets
 import selfieImg from "../images/col-img.jpg";
+import resumePdf from "../images/resume.pdf";
+// Icons
+import { FaFileAlt } from "react-icons/fa";
+
 const About = () => {
-  const { about, main, namebox, resume, selfie } = aboutStyles;
+  const { about, iconDiv, main, namebox, resume, selfie } = aboutStyles;
   return (
     <LayOut>
       <div className={main}>
@@ -32,7 +36,11 @@ const About = () => {
         </div>
         <div className={resume}>
           <h1>Résumé</h1>
-          <i className="far fa-file-pdf file-icon" />
+          <div className={iconDiv}>
+            <a href={resumePdf} target="_blank">
+              <FaFileAlt />
+            </a>
+          </div>
         </div>
       </div>
     </LayOut>
