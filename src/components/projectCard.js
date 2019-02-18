@@ -4,9 +4,10 @@ import PropTypes from "prop-types";
 import Image from "./image";
 // Styles
 import cardStyles from "./projectCard.module.css";
-
+// Icons
+import { FaDesktop, FaGithubSquare } from "react-icons/fa";
 const ProjectCard = ({ image, title, link, code, stack, description }) => {
-  const { projectCard, textBox, stackList } = cardStyles;
+  const { linkGroup, projectCard, textBox, stackList } = cardStyles;
 
   // TODO: Make the below work
   // const createLists = stack => {
@@ -26,7 +27,17 @@ const ProjectCard = ({ image, title, link, code, stack, description }) => {
     <div className={projectCard}>
       <Image src={image} alt={`${title} Preview`} />
       <div className={textBox}>
-        <h1>{title}</h1>
+        <h1>
+          {title}
+          <span className={linkGroup}>
+            <a href={link}>
+              <FaDesktop />
+            </a>
+            <a href={code}>
+              <FaGithubSquare />
+            </a>
+          </span>
+        </h1>
         <p>{description}</p>
       </div>
       <div className={stackList}>

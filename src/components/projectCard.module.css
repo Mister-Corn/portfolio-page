@@ -1,3 +1,12 @@
+.linkGroup {
+  padding-left: 1rem;
+}
+
+.linkGroup svg {
+  margin: 0 0.5rem;
+  font-size: 1.75rem;
+}
+
 .projectCard {
   margin: 2rem 1rem;
   display: grid;
