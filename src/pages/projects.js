@@ -38,13 +38,11 @@ const projectsList = [
 
 const Projects = () => {
   return (
-    <LayOut>
-      <div className="projectsList">
-        {projectsList.map(props => (
-          <ProjectCard {...props} />
-        ))}
-      </div>
-    </LayOut>
+    <div className="projectsList">
+      {projectsList.map(props => (
+        <ProjectCard {...props} />
+      ))}
+    </div>
   );
 };
 

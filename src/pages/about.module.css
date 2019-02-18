@@ -1,11 +1,10 @@
 .main {
-  height: 100%;
   width: 100%;
   display: grid;
   gap: 2rem;
-  grid-template-columns: 55% 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 30vh 1fr;
-  grid-template-areas: "selfie namebox" "about resume";
+  grid-template-areas: "namebox selfie selfie" "about about resume";
 }
 
 .namebox {
@@ -14,14 +13,16 @@
   grid-area: namebox;
   /* Color */
   background-color: #ffeaa7;
+  /* Text */
+  line-height: 0.65;
 }
 
 .namebox h1 {
-  font-size: calc(1.8rem * 2.25);
+  font-size: calc(1.25rem * 2.25);
 }
 
 .namebox p {
-  font-size: 1.8rem;
+  font-size: 1.25rem;
 }
 
 .selfie {
@@ -45,7 +46,7 @@
 }
 
 .iconDiv {
-  height: 70%;
+  height: 60%;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -53,6 +54,6 @@
 }
 
 .resume svg {
-  font-size: 5rem;
+  font-size: 4rem;
   color: #00cec9;
 }

@@ -1,18 +1,22 @@
 .header {
-  padding: 1rem;
   /* Flex */
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
 }
 
 .header img {
-  height: 128px;
-  width: 128px;
+  height: 96px;
+  width: 96px;
 }
 
-.header a {
-  margin: 0.5rem 0;
+.linkGroup {
+  height: 100%;
+}
+
+.header a,
+.header span {
+  margin-left: 0.5rem;
   /* Text */
   font-size: 1.5rem;
   color: inherit;

@@ -10,7 +10,7 @@ import "./global.css";
 const Layout = ({ children }) => (
   <div className={layoutStyles.layout}>
     <Header />
-    {children}
+    <div className={layoutStyles.content}>{children}</div>
   </div>
 );
 

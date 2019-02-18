@@ -9,9 +9,12 @@ import headerStyles from "./header.module.css";
 const Header = () => (
   <header className={headerStyles.header}>
     <img src={logo} alt="Mister-Corn!" />
-    <Link to="/">/</Link>
-    <Link to="/about/">Me</Link>
-    <Link to="/projects/">Projects</Link>
+    <div classname={headerStyles.linkGroup}>
+      <Link to="/">/</Link>
+      <Link to="/about/">Me</Link>
+      <Link to="/projects/">Projects</Link>
+    </div>
+    <span>Ronald Libago</span>
   </header>
 );
 
