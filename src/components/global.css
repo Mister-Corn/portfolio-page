@@ -1,3 +1,10 @@
+:root {
+  --black: #333333;
+  --sea-light: #baf4f4;
+  --sea: #81ecec;
+  --sun-light: #fff3cf;
+}
+
 a {
   color: #00cec9;
 }
