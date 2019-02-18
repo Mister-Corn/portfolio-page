@@ -14,7 +14,7 @@ const About = () => {
   const { about, iconDiv, main, namebox, resume, selfie } = aboutStyles;
   return (
     <div className={main}>
-      <div className={namebox}>
+      <div className={`${namebox} bordered`}>
         <h1>Ronald Libago</h1>
         <br />
         <br />
@@ -22,8 +22,12 @@ const About = () => {
         <p>JavaScript Adventurer</p>
         <p>Karaoke Fiend</p>
       </div>
-      <Image className={selfie} src={selfieImg} alt="Ronald Libago" />
-      <div className={about}>
+      <Image
+        className={`${selfie} bordered`}
+        src={selfieImg}
+        alt="Ronald Libago"
+      />
+      <div className={`${about} bordered`}>
         <h1>Who am I?</h1>
         <p>
           I am a full-stack developer wishing to deepen personal understanding
@@ -33,7 +37,7 @@ const About = () => {
           develop models to tackle troubleshooting.
         </p>
       </div>
-      <div className={resume}>
+      <div className={`${resume} bordered`}>
         <h1>Résumé</h1>
         <div className={iconDiv}>
           <a href={resumePdf} target="_blank">

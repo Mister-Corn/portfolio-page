@@ -1,6 +1,5 @@
 import React from "react";
 // Components
-import LayOut from "../components/layout";
 import ProjectCard from "../components/projectCard";
 // Assets
 import lodgel from "../images/lodgel.jpg";

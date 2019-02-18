@@ -16,24 +16,15 @@ const IndexPage = () => (
   <Layout>
     <SEO
       title="Ronald Libago"
-      keywords={[`full-stack`, `application`, `react`, `developer`]}
+      keywords={[
+        `full-stack`,
+        `application`,
+        `react`,
+        `developer`,
+        `lambda school`,
+        `javascript`
+      ]}
     />
-    {/* <div className={indexStyles.main}>
-      <div className={indexStyles.namebox}>
-        <h1>Ronald Libago</h1>
-        <p>
-          Full Stack
-          <br />
-          Web Developer
-        </p>
-      </div>
-      <Image className={indexStyles.selfie} src={selfie} alt="Ronald Libago" />
-      <Image
-        className={indexStyles.splash}
-        src={splash}
-        alt="Dockweiller Beach"
-      />
-    </div> */}
     <About />
     <Projects />
   </Layout>

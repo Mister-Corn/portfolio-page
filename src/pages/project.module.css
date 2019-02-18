@@ -1,0 +1,9 @@
+div.main::before {
+  /* Thanks to https://css-tricks.com/hash-tag-links-padding/ */
+  display: block;
+  content: " ";
+  margin-top: -113px;
+  height: 113px;
+  visibility: hidden;
+  pointer-events: none;
+}
