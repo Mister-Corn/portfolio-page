@@ -6,7 +6,10 @@ import imageStyles from "./image.module.css";
 const Image = props => {
   const { className, src, alt } = props;
   const [visible, setVisible] = useState(false);
-  const handleImageLoaded = () => setVisible(true);
+  const handleImageLoaded = () => {
+    console.log("handleImageLoaded fired");
+    setVisible(prev => !prev);
+  };
   console.log("img visible state:", visible);
   return (
     // TODO: Fix state not being updated
