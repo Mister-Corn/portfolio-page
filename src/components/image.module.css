@@ -1,5 +1,10 @@
 .image {
-  opacity: 0;
+  visibility: show;
+  animation: fadein 0.7s ease-out;
+}
+
+.invisible {
+  visibility: hidden;
 }
 
 .visible {

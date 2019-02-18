@@ -12,14 +12,16 @@ const Image = props => {
   const handleImageLoaded = () => setVisible(true);
 
   return (
+    // <div className={className}>
     <img
       className={`${imageStyles.image} ${
-        visible ? imageStyles.visible : ""
-      } ${className}`}
+        !visible ? imageStyles.invisible : ""
+      } ${className || ""}`}
       src={src}
       alt={alt}
       onLoad={handleImageLoaded}
     />
+    // </div>
   );
 };
 
