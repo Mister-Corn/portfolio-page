@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+// Components
+import Image from "./image";
 // Styles
 import cardStyles from "./projectCard.module.css";
 
@@ -22,7 +24,7 @@ const ProjectCard = ({ image, title, link, code, stack, description }) => {
 
   return (
     <div className={projectCard}>
-      <img src={image} alt={`${title} Preview`} />
+      <Image src={image} alt={`${title} Preview`} />
       <div className={textBox}>
         <h1>{title}</h1>
         <p>{description}</p>

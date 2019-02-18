@@ -1,6 +1,7 @@
 import React from "react";
 // Components
 import LayOut from "../components/layout";
+import Image from "../components/image";
 // Styles
 import aboutStyles from "./about.module.css";
 // Assets
@@ -18,7 +19,7 @@ const About = () => {
             Web Developer
           </p>
         </div>
-        <img className={selfie} src={selfieImg} alt="Ronald Libago" />
+        <Image className={selfie} src={selfieImg} alt="Ronald Libago" />
         <div className={about}>
           <h1>Who am I?</h1>
           <p>

@@ -21,7 +21,7 @@ const IndexPage = () => (
           Web Developer
         </p>
       </div>
-      <img className={indexStyles.selfie} src={selfie} alt="Ronald Libago" />
+      <Image className={indexStyles.selfie} src={selfie} alt="Ronald Libago" />
       <Image
         className={indexStyles.splash}
         src={splash}

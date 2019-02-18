@@ -16,7 +16,7 @@ const Image = props => {
       className={`${imageStyles.image} ${
         visible ? imageStyles.visible : ""
       } ${className}`}
-      src={splash}
+      src={src}
       alt={alt}
       onLoad={handleImageLoaded}
     />
