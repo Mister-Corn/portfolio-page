@@ -3,7 +3,7 @@
   display: grid;
   gap: 2rem;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 30vh 1fr;
+  grid-template-rows: 40vh 1fr;
   grid-template-areas: "namebox selfie selfie" "about about resume";
 }
 
@@ -13,8 +13,6 @@
   grid-area: namebox;
   /* Color */
   background-color: var(--sun-light);
-  /* Text */
-  line-height: 0.65;
 }
 
 .namebox h1 {
@@ -55,4 +53,25 @@
 .resume svg {
   font-size: 4rem;
   color: #00cec9;
+}
+
+@media only screen and (max-width: 699px) {
+  .main {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "namebox namebox selfie selfie"
+      "about about about resume";
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .selfie {
+    height: 300px;
+    margin: 0;
+  }
 }
