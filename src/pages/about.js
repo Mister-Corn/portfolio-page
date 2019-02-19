@@ -40,7 +40,7 @@ const About = () => {
       <div className={`${resume} bordered`}>
         <h1>Résumé</h1>
         <div className={iconDiv}>
-          <a href={resumePdf} target="_blank">
+          <a href={resumePdf} target="_blank" rel="noopener noreferrer">
             <FaFileAlt />
           </a>
         </div>
