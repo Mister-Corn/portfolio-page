@@ -1,4 +1,4 @@
-import React, { Component, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 // Styles
 import imageStyles from "./image.module.css";
@@ -38,4 +38,15 @@ const Image = props => {
   );
 };
 
+Image.propTypes = {
+  className: PropTypes.string,
+  src: PropTypes.string,
+  alt: PropTypes.string
+};
+
+Image.defaultProps = {
+  className: "",
+  src: "",
+  alt: "No image"
+};
 export default Image;

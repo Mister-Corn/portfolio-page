@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 // Components
 import Image from "./image";
@@ -24,7 +24,7 @@ const ProjectCard = ({ id, image, title, link, code, stack, description }) => {
   // };
 
   return (
-    <div key={id} className={projectCard}>
+    <div key={id} className={`${projectCard} bordered`}>
       <Image src={image} alt={`${title} Preview`} />
       <div className={textBox}>
         <h1>

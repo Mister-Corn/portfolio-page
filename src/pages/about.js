@@ -1,6 +1,5 @@
 import React from "react";
 // Components
-import LayOut from "../components/layout";
 import Image from "../components/image";
 // Styles
 import aboutStyles from "./about.module.css";
