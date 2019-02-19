@@ -16,7 +16,6 @@ const About = () => {
       <div className={`${namebox} bordered`}>
         <h1>Ronald Libago</h1>
         <br />
-        <br />
         <p>Full Stack Web Developer</p>
         <p>JavaScript Adventurer</p>
         <p>Karaoke Fiend</p>
