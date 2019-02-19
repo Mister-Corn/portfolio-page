@@ -42,8 +42,8 @@ const Projects = () => {
 
   return (
     <div id="projects" className={main}>
-      {projectsList.map(props => (
-        <ProjectCard {...props} />
+      {projectsList.map((props, i) => (
+        <ProjectCard id={i} {...props} />
       ))}
     </div>
   );

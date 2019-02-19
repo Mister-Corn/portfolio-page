@@ -5,12 +5,8 @@ import Layout from "../components/layout";
 import About from "./about";
 import Projects from "./projects";
 import SEO from "../components/seo";
-import Image from "../components/image";
 // Styles
-import indexStyles from "./index.module.css";
-// Assets
-import selfie from "../images/col-img.jpg";
-import splash from "../images/splash-img.jpg";
+// import indexStyles from "./index.module.css";
 
 const IndexPage = () => (
   <Layout>

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 // Components
 import Image from "./image";
@@ -6,7 +6,7 @@ import Image from "./image";
 import cardStyles from "./projectCard.module.css";
 // Icons
 import { FaDesktop, FaGithubSquare } from "react-icons/fa";
-const ProjectCard = ({ image, title, link, code, stack, description }) => {
+const ProjectCard = ({ id, image, title, link, code, stack, description }) => {
   const { linkGroup, projectCard, textBox, stackList } = cardStyles;
 
   // TODO: Make the below work
@@ -24,16 +24,16 @@ const ProjectCard = ({ image, title, link, code, stack, description }) => {
   // };
 
   return (
-    <div className={projectCard}>
+    <div key={id} className={`${projectCard} bordered`}>
       <Image src={image} alt={`${title} Preview`} />
       <div className={textBox}>
         <h1>
           {title}
           <span className={linkGroup}>
-            <a href={link} target="_blank">
+            <a href={link} target="_blank" rel="noopener noreferrer">
               <FaDesktop />
             </a>
-            <a href={code} target="_blank">
+            <a href={code} target="_blank" rel="noopener noreferrer">
               <FaGithubSquare />
             </a>
           </span>
@@ -42,17 +42,17 @@ const ProjectCard = ({ image, title, link, code, stack, description }) => {
       </div>
       <div className={stackList}>
         <ul>
-          {stack.map(item => (
-            <li>{item}</li>
+          {stack.map((item, i) => (
+            <li key={`${title}-${i}`}>{item}</li>
           ))}
         </ul>
-        {/* {createLists(stack).map(ele => ele)} */}
       </div>
     </div>
   );
 };
 
 ProjectCard.propTypes = {
+  id: PropTypes.number,
   image: PropTypes.string,
   title: PropTypes.string,
   link: PropTypes.string,
@@ -62,6 +62,7 @@ ProjectCard.propTypes = {
 };
 
 ProjectCard.defaultProps = {
+  id: 0,
   image: "",
   title: "Test",
   link: "",

@@ -17,10 +17,18 @@ const Header = () => (
         <a href="#projects">/projects</a>
       </div>
       <div className={headerStyles.social}>
-        <a href="https://www.github.com/mister-corn" target="_blank">
+        <a
+          href="https://www.github.com/mister-corn"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaGithubAlt />
         </a>
-        <a href="https://www.linkedin.com/in/ronald-libago" target="_blank">
+        <a
+          href="https://www.linkedin.com/in/ronald-libago"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaLinkedin />
         </a>
         <span>Ronald Libago</span>

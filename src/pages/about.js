@@ -1,6 +1,5 @@
 import React from "react";
 // Components
-import LayOut from "../components/layout";
 import Image from "../components/image";
 // Styles
 import aboutStyles from "./about.module.css";
@@ -40,7 +39,7 @@ const About = () => {
       <div className={`${resume} bordered`}>
         <h1>Résumé</h1>
         <div className={iconDiv}>
-          <a href={resumePdf} target="_blank">
+          <a href={resumePdf} target="_blank" rel="noopener noreferrer">
             <FaFileAlt />
           </a>
         </div>

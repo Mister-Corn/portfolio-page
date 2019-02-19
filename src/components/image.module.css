@@ -1,3 +1,11 @@
+/* .image {
+  animation: fadein 0.7s ease-out;
+} */
+
+.invisible {
+  opacity: 0;
+}
+
 .visible {
   animation: fadein 0.7s ease-out;
 }
