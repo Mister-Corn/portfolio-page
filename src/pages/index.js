@@ -5,8 +5,6 @@ import Layout from "../components/layout";
 import About from "./about";
 import Projects from "./projects";
 import SEO from "../components/seo";
-// Styles
-// import indexStyles from "./index.module.css";
 
 const IndexPage = () => (
   <Layout>
