@@ -13,18 +13,17 @@ const About = () => {
   const { about, iconDiv, main, namebox, resume, selfie } = aboutStyles;
   return (
     <div className={main}>
-      <div className={`${namebox} bordered`}>
-        <h1>Ronald Libago</h1>
-        <br />
-        <p>Full Stack Web Developer</p>
-        <p>JavaScript Adventurer</p>
-        <p>Karaoke Fiend</p>
-      </div>
       <Image
         className={`${selfie} bordered`}
         src={selfieImg}
         alt="Ronald Libago"
       />
+      <div className={`${namebox} bordered`}>
+        <h1>Ronald Libago</h1>
+        <p>Full Stack Web Developer</p>
+        <p>JavaScript Adventurer</p>
+        <p>Karaoke Fiend</p>
+      </div>
       <div className={`${about} bordered`}>
         <h1>Who am I?</h1>
         <p>
