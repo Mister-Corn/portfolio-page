@@ -6,8 +6,9 @@ import imageStyles from "./image.module.css";
 const Image = props => {
   const { className, src, alt } = props;
   const [visible, setVisible] = useState(false);
-  const handleImageLoaded = () => {
+  const handleImageLoaded = event => {
     console.log("handleImageLoaded fired");
+    event.stopPropagation();
     setVisible(prev => !prev);
   };
   console.log("img visible state:", visible);
