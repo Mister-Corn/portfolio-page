@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React, { Component, useState, useEffect } from "react";
 import PropTypes from "prop-types";
 // Styles
 import imageStyles from "./image.module.css";
@@ -6,24 +6,28 @@ import imageStyles from "./image.module.css";
 const Image = props => {
   const { className, src, alt } = props;
   const [visible, setVisible] = useState(false);
-  const handleImageLoaded = event => {
+  const [imgSrc, setImgSrc] = useState(null);
+  const handleImageLoaded = () => {
     console.log("handleImageLoaded fired");
-    event.stopPropagation();
-    setVisible(prev => !prev);
+    setVisible(true);
   };
   console.log("img visible state:", visible);
+
+  useEffect(() => {
+    setTimeout(() => setImgSrc(src), 0);
+  }, [src]);
+
+  console.log("imgSrc:", imgSrc);
   return (
     // TODO: Fix state not being updated
-    // <div className={className}>
     <img
       className={`${imageStyles.image} ${
-        !visible ? imageStyles.invisible : ""
+        visible ? imageStyles.visible : imageStyles.invisible
       } ${className || ""}`}
-      src={src}
+      src={imgSrc}
       alt={alt}
       onLoad={handleImageLoaded}
     />
-    // </div>
   );
 };
 

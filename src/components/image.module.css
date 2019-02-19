@@ -1,10 +1,9 @@
-.image {
-  visibility: visible;
+/* .image {
   animation: fadein 0.7s ease-out;
-}
+} */
 
 .invisible {
-  visibility: hidden;
+  opacity: 0;
 }
 
 .visible {
