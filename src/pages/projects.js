@@ -43,7 +43,7 @@ const Projects = () => {
   return (
     <div id="projects" className={main}>
       {projectsList.map((props, i) => (
-        <ProjectCard id={i} {...props} />
+        <ProjectCard key={i} id={i} {...props} />
       ))}
     </div>
   );
