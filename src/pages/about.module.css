@@ -1,10 +1,9 @@
 .main {
-  overflow: hidden;
   width: 100%;
   display: grid;
   gap: 2rem;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 50vh 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-template-areas: "namebox selfie selfie" "about about resume";
 }
 
@@ -29,6 +28,11 @@
   width: 100%;
   grid-area: selfie;
   object-fit: cover;
+}
+
+.namebox,
+.selfie {
+  max-height: 350px;
 }
 
 .about {
