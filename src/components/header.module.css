@@ -16,6 +16,12 @@
   flex-flow: row nowrap;
   justify-content: space-between;
 }
+
+.logoLink {
+  display: inline-block;
+}
+
+.logoLink,
 .header img {
   height: 96px;
   width: 96px;
@@ -26,6 +32,7 @@
 }
 
 .social {
+  margin: 0 1.25rem;
   display: flex;
   align-items: flex-end;
 }
@@ -64,4 +71,20 @@
 
 .header a:active {
   text-decoration: underline;
+}
+
+@media only screen and (max-width: 599px) {
+  .linkGroup a {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 354px) {
+  .linkGroup {
+    display: none;
+  }
+
+  .inner {
+    justify-content: flex-end;
+  }
 }
