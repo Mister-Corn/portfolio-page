@@ -30,11 +30,16 @@ const About = () => {
         <h1>Who am I?</h1>
         <p>
           I am a full-stack developer wishing to deepen personal understanding
-          and find success through collaboration. I am passionate about learning
-          and excellence. Endeavors to promote cohesiveness and teamwork. I am
-          able to subdivide big tasks into smaller manageable actions and to
-          develop models to tackle troubleshooting.
+          and find success through collaboration.
         </p>
+        <ul>
+          <li>Passionate about learning and excellence.</li>
+          <li>Endeavors to promote cohesiveness and teamwork.</li>
+          <li>
+            Able to subdivide big tasks into smaller manageable actions and to
+            develop models to tackle troubleshooting.
+          </li>
+        </ul>
       </div>
       <div className={`${resume} bordered`}>
         <h1>Résumé</h1>

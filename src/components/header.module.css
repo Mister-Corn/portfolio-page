@@ -46,7 +46,6 @@
 .header span {
   margin-left: 1.5rem;
   font-size: 1.5rem;
-  color: var(--black);
   font-family: "Open Sans Condensed", "Century Gothic", "URW Gothic L",
     "Avant Garde", sans-serif;
 }

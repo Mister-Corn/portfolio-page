@@ -13,6 +13,7 @@ const Header = () => (
     <img src={logo} alt="Mister-Corn!" />
     <div className={headerStyles.inner}>
       <div className={headerStyles.linkGroup}>
+        <span>Ronald Libago</span>
         <Link to="/">/me</Link>
         <a href="#projects">/projects</a>
       </div>
@@ -31,7 +32,6 @@ const Header = () => (
         >
           <FaLinkedin />
         </a>
-        <span>Ronald Libago</span>
       </div>
     </div>
   </header>
