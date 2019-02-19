@@ -7,8 +7,11 @@
 }
 
 .visible {
-  opacity: 1;
   animation: fadein 0.7s ease-out;
+}
+
+.invisible {
+  opacity: 0;
 }
 
 @keyframes fadein {
