@@ -38,3 +38,10 @@
 .stackList {
   grid-area: stack;
 }
+
+@media only screen and (max-width: 599px) {
+  .projectCard {
+    display: flex;
+    flex-direction: column;
+  }
+}
