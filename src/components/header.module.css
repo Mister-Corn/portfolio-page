@@ -1,6 +1,7 @@
 .header {
   position: sticky;
   position: -webkit-sticky;
+  z-index: 2;
   height: 113px;
   top: 0;
   background-color: white;
