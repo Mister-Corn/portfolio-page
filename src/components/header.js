@@ -10,9 +10,9 @@ import { FaGithubAlt, FaLinkedin } from "react-icons/fa";
 
 const Header = () => (
   <header className={headerStyles.header}>
-    <a className={headerStyles.logoLink} href="#">
+    <Link className={headerStyles.logoLink} to="/">
       <img src={logo} alt="Mister-Corn!" />
-    </a>
+    </Link>
     <div className={headerStyles.inner}>
       <div className={headerStyles.linkGroup}>
         <span>Ronald Libago</span>

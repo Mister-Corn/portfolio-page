@@ -12,7 +12,7 @@ import { FaFileAlt } from "react-icons/fa";
 const About = () => {
   const { about, iconDiv, main, namebox, resume, selfie } = aboutStyles;
   return (
-    <div className={main}>
+    <div id="about" className={main}>
       <Image
         className={`${selfie} bordered`}
         src={selfieImg}
@@ -31,11 +31,18 @@ const About = () => {
           and find success through collaboration.
         </p>
         <ul>
-          <li>Passionate about learning and excellence.</li>
-          <li>Endeavors to promote cohesiveness and teamwork.</li>
           <li>
-            Able to subdivide big tasks into smaller manageable actions and to
-            develop models to tackle troubleshooting.
+            I am passionate about learning and enjoy discovering new things.
+          </li>
+          <li>
+            I am enthusiastic and endeavor to bring positivity and
+            light-heartedness to help people collaborate and come together.
+          </li>
+          <li>
+            I am skilled in JavaScript and in a variety of JavaScript tooling,
+            such as React, Redux, and Express. My exposure to Python and C
+            grants me a framework to learn and incorporate new technologies
+            effectively.
           </li>
         </ul>
       </div>
