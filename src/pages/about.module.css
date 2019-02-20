@@ -21,6 +21,8 @@
 
 .namebox p {
   font-size: 1.25rem;
+  font-family: "Century Gothic", "CenturyGothic", "Questrial", "URW Gothic L",
+    "Avant Garde", "Arial", sans-serif;
 }
 
 .selfie {
