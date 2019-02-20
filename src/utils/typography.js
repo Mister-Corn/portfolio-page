@@ -2,19 +2,19 @@ import Typography from "typography";
 
 export default new Typography({
   googleFonts: [
-    { name: "Open Sans Condensed", styles: ["700", "800"] },
-    { name: "Open Sans", styles: ["400", "400i"] }
+    { name: "Questrial", styles: ["700", "800"] },
+    { name: "Roboto", styles: ["400", "400i"] }
   ],
   headerFontFamily: [
-    "Open Sans Condensed",
     "Century Gothic",
     "CenturyGothic",
+    "Questrial",
     "URW Gothic L",
     "Avant Garde",
     "Arial",
     "sans-serif"
   ],
-  bodyFontFamily: ["Open Sans", "Arial", "sans-serif"],
+  bodyFontFamily: ["Roboto", "Arial", "sans-serif"],
   scaleRatio: 2.25,
   baseLineHeight: 1.1
 });
