@@ -54,8 +54,9 @@
 .header span {
   margin-left: 1.5rem;
   font-size: 1.5rem;
-  font-family: "Open Sans Condensed", "Century Gothic", "URW Gothic L",
-    "Avant Garde", sans-serif;
+  font-weight: 300;
+  font-family: "Century Gothic", "Muli", "URW Gothic L", "Avant Garde",
+    sans-serif;
 }
 
 .header a:link {
